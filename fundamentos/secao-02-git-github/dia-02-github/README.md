@@ -1,0 +1,3 @@
+O primeiro passo é ter uma pasta versionada e criar um estrutura inicial e fazemos isso utilizando o comando git init. O segundo passo é criar uma branch nova com o comando git checkout nome-da-branch ou git checkout -b nome-da-branch, adiconar ou modificar os comandos dentro do arquivo, digitar o comando git add . e depois realize o commit usando o comando git commit -m ' escrever as modificacoes de forma clara' 
+para verificar se esta tudo certo digita sempre git status
+para verificar os commits tb conhecido como checkpoint digitar git log para mostratr todos os commits.
