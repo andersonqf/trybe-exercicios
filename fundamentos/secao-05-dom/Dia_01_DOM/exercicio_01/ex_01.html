@@ -1,0 +1,26 @@
+<!-- Recupere o elemento que contém o título da página e faça algo com ele, por exemplo alterá-lo para o nome do seu filme favorito.
+Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
+Por fim, recupere o subtítulo e altere-o também.
+Recupere o elemento que contém o título da página e faça algo com ele, por exemplo alterá-lo para o nome do seu filme favorito.-->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      const title = document.getElementById('page-title');
+      title.innerText = 'O homem bicentenario'
+      const paragraph2 = document.getElementById('second-paragraph');
+      paragraph2.innerText = 'Comecando a Aprender o DOM'
+      const subititulo = document.getElementById('subtitle');
+      subititulo.innerText = 'Agora vai'
+    </script>
+  </body>
+</html>
