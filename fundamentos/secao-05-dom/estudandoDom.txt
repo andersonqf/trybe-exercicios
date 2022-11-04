@@ -1,0 +1,2 @@
+getElementById - seleciona um elemento com a Id;
+getElementsByClassName lembrar que ele acessa sempre uma array, seliciona todos os elementos que tem uma classe;
