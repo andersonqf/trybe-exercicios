@@ -1,8 +1,0 @@
-> Declarações de variáveis
-* let
-* var
-* const
-
-> para declarar uma variavel: consle.log()
-
-
