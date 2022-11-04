@@ -1,2 +1,13 @@
 getElementById - seleciona um elemento com a Id;
-getElementsByClassName lembrar que ele acessa sempre uma array, seliciona todos os elementos que tem uma classe;
+getElementsByClassName - lembrar que ele acessa sempre uma array, seliciona todos os elementos que tem uma classe;
+getElementsBytagName - seleciona um elemento usando uma Tag, lembrar que ele acessa uma array ou objeto, por isso tem q informar a posicao [0] ou [1];
+
+querySelector - seleciona o preiro elemento que for localizado de cima para baixo da esquerda para direita
+querySelectorAll - seleciona todos os elementos solicitado
+
+Enquanto os getElementsByClassName('ClassName') e getElementsByTagName('TagName') retornam uma HTMLCollection, os querySelectorAll('.ClassName') e querySelectorAll('TagName') retornam uma NodeList.
+
+
+Obs. quando inspecionar a pagina dentro da aba console
+> Html colection - so contem  elementos HTML
+> NodeList - tem os elementos Html e textos
