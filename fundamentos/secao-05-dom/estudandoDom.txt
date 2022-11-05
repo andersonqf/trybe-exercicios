@@ -1,13 +1,21 @@
 getElementById - seleciona um elemento com a Id;
 getElementsByClassName - lembrar que ele acessa sempre uma array, seliciona todos os elementos que tem uma classe;
 getElementsBytagName - seleciona um elemento usando uma Tag, lembrar que ele acessa uma array ou objeto, por isso tem q informar a posicao [0] ou [1];
+> Ex.: let (define-nome-da-variavel) = document.getElementById('nome-da-Id-no-HTML') 
+
 
 querySelector - seleciona o preiro elemento que for localizado de cima para baixo da esquerda para direita
 querySelectorAll - seleciona todos os elementos solicitado
+>Ex.: let (define-nome-da-variavel) = querySelectorAll('#Id)   - Pode capturar o filho da tag ('.nome-Class nome-Filho')
+Obs.: Usar # para capturar Id e '.' para capturar class
+
+
+Para alterar o texto usamos o:
+> innerText = muda o texto capturado pelo getElementById ou querySelector ou ....
+> innerHTML = muda o texto e tambem as Tag's 
+
 
 Enquanto os getElementsByClassName('ClassName') e getElementsByTagName('TagName') retornam uma HTMLCollection, os querySelectorAll('.ClassName') e querySelectorAll('TagName') retornam uma NodeList.
-
-
 Obs. quando inspecionar a pagina dentro da aba console
 > Html colection - so contem  elementos HTML
 > NodeList - tem os elementos Html e textos
