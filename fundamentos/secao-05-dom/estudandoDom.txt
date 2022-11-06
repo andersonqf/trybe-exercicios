@@ -28,15 +28,24 @@ A propriedade parentNode acessa o elemento pai do elemento sobre o qual a propri
 
 Há, ao todo, as seguintes propriedades:
 
-parentNode: retorna o nó pai.
-parentElement: retorna o elemento pai.
-childNodes: retorna um NodeList com todos os nós filhos.
-children: retorna um HTMLCollection com todos os elementos filhos.
-firstChild: retorna o primeiro nó filho.
-firstElementChild: retorna o primeiro elemento filho.
-lastChild: retorna o último nó filho.
-lastElementChild: retorna o último elemento filho.
-nextSibling: retorna o próximo nó.
-nextElementSibling: retorna o próximo elemento.
-previousSibling: retorna o nó anterior.
-previousElementSibling: retorna o elemento anterior.
+> parentNode: retorna o nó pai.
+> parentElement: retorna o elemento pai.
+> childNodes: retorna um NodeList com todos os nós filhos.
+> children: retorna um HTMLCollection com todos os elementos filhos.
+> firstChild: retorna o primeiro nó filho.
+> firstElementChild: retorna o primeiro elemento filho.
+> lastChild: retorna o último nó filho.
+> lastElementChild: retorna o último elemento filho.
+> nextSibling: retorna o próximo nó.
+> nextElementSibling: retorna o próximo elemento.
+> previousSibling: retorna o nó anterior.
+> previousElementSibling: retorna o elemento anterior.
+
+ _________________________________________________________________________________________________
+
+ Criando elementos com:
+ > createElement = cria um nó de elemento 'tag' Ex. (h1), (p), (li), ...
+ > appendChild = adiciona o nó de texto criado com o comando createElement; 
+
+ Removendo elementos com:
+ >removeChild = 

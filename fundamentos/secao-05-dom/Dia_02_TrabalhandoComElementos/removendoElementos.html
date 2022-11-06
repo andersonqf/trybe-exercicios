@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+    
+        <script>
+            const pai = document.getElementById('pai'); //Primeiro passo: Recupere o elemento com o id pai
+            const todosOsFilhos = pai.childNodes; //Segundo passo: Utilize o .childNodes para retornar uma coleção viva de nós filhos do elemento pai.
+            for (let index = todosOsFilhos.length - 1; index >= 0; index -= 1) { //Terceiro passo: Utilize uma estrutura de repetição para iterar sob o array todosOsFilhos.
+            const filhoAtual = todosOsFilhos[index];
+            if (filhoAtual.id !== 'elementoOndeVoceEsta') { //Quarto passo: Armazene o filho atual em uma variável.
+
+                filhoAtual.remove();
+            }
+            }
+            const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho'); // Recupera o elemento com o id segundoEUltimoFilhoDoFilho
+            segundoEUltimoFilhoDoFilho.remove(); // Remove o segundo filho do filho
+        </script>
+    </main>     
+</body>
+</html>
+
+
+<!-- Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+> Primeiro passo: Recupere o elemento com o id pai
+> Segundo passo: Utilize o .childNodes para retornar uma coleção viva de nós filhos do elemento pai.
+> Terceiro passo: Utilize uma estrutura de repetição para iterar sob o array todosOsFilhos.
+    *Utilize o .length para verificar o tamanho que todosOsFilhos possui;
+    *Como a primeira posição de um array é a posição 0, subtraia 1 do tamanho de todosOsFilhos;
+    *Decremente o index a cada iteração.
+> Quarto passo: Armazene o filho atual em uma variável.
+> Quinto passo: Caso o id do filhoAtual seja diferente de elementoOndeVoceEsta, remova o filhoAtual.
+> Sexto passo: Recupere o elemento com o id segundoEUltimoFilhoDoFilho e o remova. -->
+
+
+
