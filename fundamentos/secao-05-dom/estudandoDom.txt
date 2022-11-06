@@ -1,3 +1,5 @@
+                                            **AULA 01**
+
 getElementById - seleciona um elemento com a Id;
 getElementsByClassName - lembrar que ele acessa sempre uma array, seliciona todos os elementos que tem uma classe;
 getElementsBytagName - seleciona um elemento usando uma Tag, lembrar que ele acessa uma array ou objeto, por isso tem q informar a posicao [0] ou [1];
@@ -19,3 +21,22 @@ Enquanto os getElementsByClassName('ClassName') e getElementsByTagName('TagName'
 Obs. quando inspecionar a pagina dentro da aba console
 > Html colection - so contem  elementos HTML
 > NodeList - tem os elementos Html e textos
+
+                                             **AULA 02**
+
+A propriedade parentNode acessa o elemento pai do elemento sobre o qual a propriedade é chamada. Mas ela não é a única forma de, a partir de um elemento, navegar para outros.
+
+Há, ao todo, as seguintes propriedades:
+
+parentNode: retorna o nó pai.
+parentElement: retorna o elemento pai.
+childNodes: retorna um NodeList com todos os nós filhos.
+children: retorna um HTMLCollection com todos os elementos filhos.
+firstChild: retorna o primeiro nó filho.
+firstElementChild: retorna o primeiro elemento filho.
+lastChild: retorna o último nó filho.
+lastElementChild: retorna o último elemento filho.
+nextSibling: retorna o próximo nó.
+nextElementSibling: retorna o próximo elemento.
+previousSibling: retorna o nó anterior.
+previousElementSibling: retorna o elemento anterior.
