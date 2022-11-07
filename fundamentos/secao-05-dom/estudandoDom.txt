@@ -22,7 +22,7 @@ Obs. quando inspecionar a pagina dentro da aba console
 > Html colection - so contem  elementos HTML
 > NodeList - tem os elementos Html e textos
 
-                                             **AULA 02**
+                                **AULA 02* TRABALHANDO COM ELEMENTOS **
 
 A propriedade parentNode acessa o elemento pai do elemento sobre o qual a propriedade é chamada. Mas ela não é a única forma de, a partir de um elemento, navegar para outros.
 
@@ -49,3 +49,28 @@ Há, ao todo, as seguintes propriedades:
 
  Removendo elementos com:
  >removeChild = 
+
+ ************************************RESUMAO ATE AGORA****************************************
+ É importante conhecer os comandos para criar, buscar e remover elementos, porem a dica é:
+ >  segura na mao de 1 deles e segue a vida forever
+
+ Qual a ordem pra seguir quando for adicionar algum elemento em um HTML pelo JS:
+ > 1 - Capturo o elemento pai com o comando:
+    let weekDays = document.getElementById('weekDays');
+
+    let weekDaysList = ['Domingo', 'Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
+
+> 2 - Crio o elemento:
+    let weekday = document.creatElement ('li') ou ('p') ou ('div') ;
+
+> 3 - Crio um valor pra esse elemento:
+    weekDay.innetHTML = weekDayList[index];
+
+> 4 - Adiciono o elemento:
+    weekDays.appendChild(weekDay);
+
+*****************************************************************************************************
+
+                                    AULA 3 - EVENTOS
+
+ 
