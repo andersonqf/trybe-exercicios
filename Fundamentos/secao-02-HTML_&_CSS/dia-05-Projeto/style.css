@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+main {
+  display: inline-block;
+}
+
+/* 14. Altere atributos relacionados às fontes */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: normal;
+}
+
+#cabecalho {
+  position: static;
+  top: 0;
+
+}
+
+/* 13. Utilize o Box model */
+#minha_foto {
+  width: 250px;
+  border-radius: 20%;
+  display: block;
+  top: 150px;
+  right: 100px;
+  padding: 5px;
+  margin: 0;
+}
+
+.lado-direito {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+
+.lado-esquerdo {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+
+.link {
+  margin: auto;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.licoes_aprendidas {
+  display: inline-block;
+  position: static;
+}
+
+.licoes_a_aprender {
+  display: inline-block;
+  position: static;
+}
+
+/* #rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(180, 173, 173);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+} */
