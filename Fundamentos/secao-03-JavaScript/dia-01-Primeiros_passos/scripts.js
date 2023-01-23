@@ -1,8 +1,8 @@
 /* VARIAVEIS */
-const myName = "Anderson";
+/* const myName = "Anderson";
 const birthCity = "São Paulo";
 let birthYear = 1984;
-birthYear = 2030;
+birthYear = 2030; */
 /* console.log(myName);
 console.log(birthCity);
 console.log(birthYear);
@@ -19,13 +19,12 @@ const isHuman = true;
 // Undefined
 let myJob;
 // Null
-let myCar = null;
+let myCarr = null;
 // Object
-const myCar = {
+let myCar = {
     brand: "Ford",
     model: "Fiesta",
     year: 2019
 };
 //Array
 const myArray = [1, 2, 3, 4, 5];
-
