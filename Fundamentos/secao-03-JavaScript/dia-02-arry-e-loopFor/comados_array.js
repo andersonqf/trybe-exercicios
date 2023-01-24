@@ -20,13 +20,13 @@ console.log(arr2);
 
 //.pop remove o ultimo elemento do array
 let arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-arr.pop();
-console.log(arr)3;
+arr3.pop();
+console.log(arr3);
 // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //.shift remove o primeiro elemento do array
 let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-arr.shift();
+arr4.shift();
 console.log(arr4);
 // [2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -37,7 +37,7 @@ console.log(arr5.indexOf(5));
 
 //.splice remove um elemento do array
 let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-arr.splice(5, 1);
+arr6.splice(5, 1);
 console.log(arr6);
 // [1, 2, 3, 4, 5, 7, 8, 9, 10]
 
