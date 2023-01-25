@@ -8,8 +8,8 @@ console.log(arr.length);
 
 //.push adiciona um elemento no final do array
 let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];   
-arr.push(11);   
-console.log(arr);   
+arr1.push(11);   
+console.log(arr1);   
 // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 //.unshift adiciona um elemento no inicio do array
@@ -39,7 +39,7 @@ console.log(arr5.indexOf(5));
 let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 arr6.splice(5, 1);
 console.log(arr6);
-// [1, 2, 3, 4, 5, 7, 8, 9, 10]
+// [2, 3, 4, 7, 8, 9, 10]
 
 //.slice retorna um novo array a partir de um indice
 let arr7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
