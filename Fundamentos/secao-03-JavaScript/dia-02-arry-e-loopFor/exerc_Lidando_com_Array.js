@@ -84,4 +84,3 @@ console.log(array);
 for (i = 0; i < array.length; i++) {
     console.log(array[i] + ' dividido por 2 é igual a ' + array[i] / 2);
 }
-
