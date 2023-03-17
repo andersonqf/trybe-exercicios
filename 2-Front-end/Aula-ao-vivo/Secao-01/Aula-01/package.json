@@ -1,0 +1,20 @@
+{
+  "name": "aula-ao-vivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "lint": "eslint ./src"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "dia-01-introducao-f_e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-secao-01-Introducao-front_end.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
+    "clipboard-copy": "^4.0.1",
+    "nanoid": "^4.0.1",
+    "vite": "^4.2.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  }
+}
