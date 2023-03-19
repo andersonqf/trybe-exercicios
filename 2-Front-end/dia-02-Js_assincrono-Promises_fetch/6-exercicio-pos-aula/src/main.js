@@ -18,7 +18,7 @@ const btn = document.querySelector('#button');
 // Aqui, você insere o token de acesso obtido no site da API
 
 const ACCESS_TOKEN = '6042239645854088';
-const BASE_URL = `https://superheroapi.com/api/${ACCESS_TOKEN}`
+const BASE_URL = `https://superheroapi.com/api.php/${ACCESS_TOKEN}`
 const MAX_HERO = 731
 
 const randomID = () => Math.floor(Math.random() * MAX_HERO)
