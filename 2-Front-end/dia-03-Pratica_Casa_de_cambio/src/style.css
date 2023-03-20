@@ -1,0 +1,114 @@
+body {
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0.17%;
+    
+    background: #282C33;
+
+    font-family: 'Fira Code';
+}
+
+.green {
+    color: #96eb95;
+}
+
+.yellow {
+    color: yellow;
+}
+
+h1 {
+    position: absolute;
+    width: 517px;
+    height: 74px;
+    left: 306px;
+    top: 63px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 79px;    
+    color: #FFFFFF  
+}
+
+label {
+    position: absolute;
+    width: 111px;
+    height: 15px;
+    left: 307px;
+    top: 165px;
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #FFFFFF; 
+}
+
+#coin-input{
+    
+    width: 171px;
+    height: 48px;
+    left: 306px;
+    top: 185px;
+    
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+}
+
+button {
+box-sizing: border-box;
+
+position: absolute;
+width: 171px;
+height: 48px;
+left: 491px;
+top: 185px;
+
+background: #96EB95;
+border: 1px solid #96EB95;
+border-radius: 10px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+
+color: #373737;
+}
+
+main {
+position: absolute;
+width: 900px;
+height: 583px;
+left: 306px;
+top: 290px;
+
+background: rgba(255, 255, 255, 0.06);
+border-radius: 20px;
+}
+
+.coins {
+    padding: 0 20px;
+    list-style: none;
+    max-height: 500px;
+    align-self: stretch;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+    color: #FFFFFF 
+}
+    
+li {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 20px;
+    
+}

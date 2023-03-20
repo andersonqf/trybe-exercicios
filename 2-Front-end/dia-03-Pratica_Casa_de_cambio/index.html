@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Casa de Câmbio</title>
+   
 </head>
-<body>
-    <section class="conteiner">
-        <h1 id="title">Casa de Cambio</h1>
-        <form>
-            <input type="text" name="" placeholder="USD" id="">
-            <button type="submit" name="Pesquisar">Pesquisar1</button>
-        </form>
-        <div>
-            
-        </div>
-    </section>
+<body>    
+    
+    <h1 id="title">Casa de <span class="green">Câmbio</span></h1>
+    <form class="conteiner-header">
+        <label for="coin-input"> <!-- esse for coin input é para facilitar o usuario a clicar na caixa, caso ele clique no digite a moeda automaticamente vai para digitacao, para funcionar precisa adicionar o id no input com nome iguais -->
+            Digite a moeda
+            <input type="text" placeholder="USD" id="coin-input">
+        </label>
+        <button type="button" class="search-btn">Pesquisar</button>
+    </form>
+
+        <main class="main">
+            <section>
+                <h2 class="coins-title"></h2>
+                <ul class="coins"></ul>
+            </section>
+        </main>
+    
+    <script src="./src/main.js" type="module" defer></script> <!--  o defer é para carregar o script depois que o html for carregado -->
 </body>
 </html>
