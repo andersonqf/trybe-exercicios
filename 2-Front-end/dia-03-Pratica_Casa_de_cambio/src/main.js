@@ -2,8 +2,8 @@
 import { renderCoins } from './components';
 import './style.css';
 
-const searchBtn = document.querySelector('search-btn');
-const coinInput = document.querySelector('coin-input');
+const searchBtn = document.querySelector('#search-btn');
+const coinInput = document.querySelector('#coin-input');
 
 /* const fakeCoins = [
   { name: 'USD', value: 5.280 },
