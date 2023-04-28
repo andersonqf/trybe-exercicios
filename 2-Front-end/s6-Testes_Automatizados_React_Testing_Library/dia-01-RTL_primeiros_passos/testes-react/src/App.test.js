@@ -49,4 +49,5 @@ describe('Teste da aplicação toda', () => {
   expect(inputEmail).toHaveValue(""); // verifica se o input de email esta vazio apos clicar no botao
   expect(emailUser).toHaveTextContent("Valor: teste@teste.com"); // verifica se o email digitado foi renderizadoddd
   });
+  /* screen.logTestingPlaygroundURL(); */ // imprime no console a url do playground
 });
