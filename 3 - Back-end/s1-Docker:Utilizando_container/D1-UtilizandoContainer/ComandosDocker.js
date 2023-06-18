@@ -20,9 +20,23 @@
 // docker rm ID_CONTAINER: remove o container com id em questão.
 // docker rm -f ID_CONTAINER: remove o container com id em questão mesmo que ele esteja em execução.
 // docker exec -it ID_CONTAINER: adiciona o terminal, e permite interagir com o container.
+// docker build -f Dockerfile: cria uma imagem a partir de um Dockerfile.
 
 
+/* 
+Contêineres:   docker container rm $(docker container ls -a -q)
+Imagens :      docker image rm $(docker image ls -a -q)
+Volumes :      docker volume rm $(docker volume ls -q)
+Networks :     docker network rm $(docker network ls -q) 
 
+> docker container stop $(docker container ls -a -q)
+
+E podemos também vincular dois comandos para limpar todo o ambiente:
+
+> docker container stop $(docker container ls -a -q) && docker system prune -a -f --volumes
+
+Dessa forma, você têm essas opções para limpar o seu ambiente, podendo também criar scripts com combinação de comandos para serem executados automaticamente.
+*/
 
 
 
