@@ -1,0 +1,37 @@
+version: "3" # Versão do docker-compose
+services: # Serviços que serão executados 
+  frontend: # Nome do serviço 
+    build: frontend/ # Caminho para o Dockerfile 
+    restart: always # Sempre que o serviço for reiniciado, reinicie o container
+    ports: # Portas que serão expostas
+      - 3000:3000
+    depends_on: # Dependências do serviço
+      - backend
+    volumes: # Volumes que serão montados no container  
+      - ./frontend/src:/frontend/src # copia o conteúdo da pasta frontend/src para o container na pasta /frontend/src 
+    networks: # Redes que serão criadas e conectadas aos containers 
+      - rede-virtual-1 # Nome da rede 
+  backend:
+    build: backend/
+    restart: always
+    ports:
+      - 3001:3001
+    environment: # Variáveis de ambiente que serão passadas para o container 
+      - DB_HOST=database  # O valor da variável de ambiente DB_HOST será database
+    depends_on:
+      - database
+    networks: # Redes que serão criadas e conectadas aos containers
+      - rede-virtual-1 # Nome da rede
+      - rede-virtual-2 # Nome da rede
+  database:
+    image: betrybe/docker-compose-example-database:v1
+    restart: always
+    networks: # Redes que serão criadas e conectadas aos containers
+      - rede-virtual-2  # Nome da rede
+
+volumes:
+  dados-do-banco:
+
+networks:
+  rede-virtual-1:
+  rede-virtual-2:
