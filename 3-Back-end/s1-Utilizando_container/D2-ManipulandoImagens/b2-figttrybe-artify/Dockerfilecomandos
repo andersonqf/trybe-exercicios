@@ -1,0 +1,32 @@
+# syntax=docker/dockerfile:1
+# o FROM é para dizer qual imagem vai ser usada como base para a criacao da nova imagem
+FROM node:18-alpine
+# o WORKDIR é para dizer qual vai ser o diretorio de trabalho onde o container vai ser iniciado
+WORKDIR /app
+# serve para aumentar a performace do docker build pois ele nao vai ficar copiando arquivos que nao foram alterados
+# o docker analisa os arquivos que estao em Cache e se nao tiver alterado ele nao copia novamente
+COPY package.json .
+# Inicialmente toda imagem é execultada pelo usuario ROOT, porem isso é considerado uma falha de segurança.
+# Entao devemos criar o grupo e usuario, primeiro cria o grupo e depois o usuario, adiciona o usuario ao group.
+# Com o comando -S cria o usuario sem senha e o -G adiciona o usuario ao grupo conforme abaixo:
+RUN addgroup dev && adduser -S -G anderson dev
+#agora tem que adicionar o usuario ao grupo root para poder instalar as dependencias.
+USER anderson 
+# o RUN execulta o comando dentro do container instalando as dependencias
+RUN yarn install --production
+# o COPY copia os arquivos da pasta atual para a pasta do container. O priemiro ponto é para copiar todas as psatas do diretorio raiz que esta o Dockerfile e o segundo ponto é para direcionar os arquivos copiados no container para a pasta que foi definida no WORKDIR
+COPY . .
+# o CMD execulta a aplicacao quando o container for iniciado, neste caso ele execulta o node e o arquivo index.js;
+CMD ["node", "src/index.js"]
+# o EXPOSE é para expor a porta do container
+EXPOSE 3000
+
+# Agora tenho que digitar no terminal dentro da pasta da aplicacao que nesse exemplo é o getting-started, o comando "docker build -t nome_da_imagem ."
+# -t é para dar um nome a imagem
+# . é para dizer que o arquivo Dockerfile está na pasta atual
+
+#Para verficar se a imagem foi criada, digite "docker images"
+
+#Para criar o container, digite "docker run -dp 3000:3000 nome_da_imagem"
+# -dp = -d é para rodar em background e -p é para mapear a porta do container com a porta do host
+# 3000:3000 é a porta do container e a porta do host 
