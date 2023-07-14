@@ -1,6 +1,7 @@
 version: '3' # versao do docker compose
 services: # servicos que vamos utilizar no docker compose (servidor web, frontend, backend, banco de dados, etc)
   frontend: # nome do servico
+    container_name: frontend # nome do container
     build: frontend/ # pasta onde esta o dockerfile
     restart: on-failure # reinicia o servico caso ele falhe (nao e recomendado para banco de dados)
     depends_on: # depende do servico backend
@@ -8,6 +9,7 @@ services: # servicos que vamos utilizar no docker compose (servidor web, fronten
     ports: # porta que o servico vai utilizar (3000:3000) porta do host: porta do servico 
       - 3000:3000
   backend:
+    container_name: backend
     build: backend/ 
     restart: on-failure
     depends_on:
