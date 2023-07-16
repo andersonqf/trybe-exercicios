@@ -18,9 +18,9 @@ const teams = [
   },
 ];
 // get solicita daos de um recurso específico
-app.get('/', (req, res) => res.status(200).json({ message: 'Olá Mundo!' })); // criando uma rota raiz com o método GET que retorna um JSON com a mensagem "Olá Mundo!" e o status 200, os paramentros req e res representam a requisição e a resposta respectivamente 
+app.get('/', (_req, res) => res.status(200).json({ message: 'Olá Mundo!' })); // criando uma rota raiz com o método GET que retorna um JSON com a mensagem "Olá Mundo!" e o status 200, os paramentros req e res representam a requisição e a resposta respectivamente 
 
-app.get('/teams', (req, res) => res.status(200).json({ teams })); // criando uma rota /teams com o método GET que retorna um JSON com o array teams e o status 200 
+app.get('/teams', (_req, res) => res.status(200).json({ teams })); // criando uma rota /teams com o método GET que retorna um JSON com o array teams e o status 200 
 
 // POST cria um novo recurso com os dados enviados no corpo da requisição 
 app.post('/teams', (req, res) => {
