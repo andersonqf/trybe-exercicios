@@ -8,8 +8,13 @@ app.use(express.json());
 
 //CRIANDO AS CONSTANTES PARA GRAVAR OS DADOS NO ARQUIVO JSON
 const readFile = async () => {
-    const activities = await fs.readFile('src/activities.json', 'utf-8'); 
-    return JSON.parse(activities); // o método JSON.parse() converte uma string JSON para um objeto JavaScript
+    try {
+        const activities = await fs.readFile('src/activities.json', 'utf-8'); 
+        return JSON.parse(activities); // o método JSON.parse() converte uma string JSON para um objeto JavaScript
+        
+    } catch (error) {
+        console.error(`Arquivo nao pode ser lido: ${error}`)    
+    }
 };
 
 const writeFile = async (activityArr) => {
@@ -39,17 +44,18 @@ app.get('/activities/:id', async (req, res) => {
     return res.status(200).json(activity);
 }); 
 
-app.put('/activities/:id', async(req, res) => {
+app.put('/activities/:id', async(req, res) => { 
     const { id } = req.params;
     const { name, type } = req.body;
-    const activities = await readFile();
+    let activities = await readFile();
 
     
-    const updateActivity = activities.forEach((activity) => {
+    const updateActivity = activities.map((activity) => {
         if (activity.id === Number(id)) {
             activity.name = name;
             activity.type = type;
         }
+        return activities;
     });
     await writeFile(activities);
     return res.status(200).json({ updateActivity });
