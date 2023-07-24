@@ -2,6 +2,8 @@ const express = require('express');
 const { readMissionsData, writeMissionsData, updateMissionData,
      deleteMissionData } = require('./utils/fsUtils'); 
 
+require('express-async-errors');
+
 const app = express(); // Criando uma instância do Express
 
 app.use(express.json()); // para o post funcionar; sem isso, o post não funciona 
@@ -32,6 +34,15 @@ app.delete('/missions/:id', async (req, res) => {
 
   await deleteMissionData(Number(id));
   return res.status(204).end();
+});
+
+app.use((err, _req, res, _next) => { // Middleware de erro genérico que recebe o erro como parâmetro e retorna um status 500 com uma mensagem de erro
+  console.error(err.stack);
+  _next(err);
+});
+
+app.use((err, _req, res, _next) => {
+  res.status(500).send({ message: 'Algo deu errado!' });
 });
 
 module.exports = app;

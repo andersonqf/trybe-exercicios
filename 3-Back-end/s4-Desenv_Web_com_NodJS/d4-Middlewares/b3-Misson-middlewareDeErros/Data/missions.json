@@ -1,0 +1,143 @@
+[
+    {
+      "id": 1,
+      "name": "Apollo 11",
+      "year": 1969,
+      "country": "Estados Unidos",
+      "destination": "Lua"
+    },
+    {
+      "id": 2,
+      "name": "Vostok 1",
+      "year": 1961,
+      "country": "União Soviética",
+      "destination": "Órbita terrestre"
+    },
+    {
+      "id": 3,
+      "name": "Chang'e 3",
+      "year": 2013,
+      "country": "China",
+      "destination": "Lua"
+    },
+    {
+      "id": 4,
+      "name": "Mars Pathfinder",
+      "year": 1996,
+      "country": "Estados Unidos",
+      "destination": "Marte"
+    },
+    {
+      "id": 5,
+      "name": "Rosetta",
+      "year": 2004,
+      "country": "Agência Espacial Europeia",
+      "destination": "Cometa 67P/Churyumov-Gerasimenko"
+    },
+    {
+      "id": 6,
+      "name": "Pioneer 10",
+      "year": 1972,
+      "country": "Estados Unidos",
+      "destination": "Júpiter"
+    },
+    {
+      "id": 7,
+      "name": "Viking 1",
+      "year": 1975,
+      "country": "Estados Unidos",
+      "destination": "Marte"
+    },
+    {
+      "id": 8,
+      "name": "Hayabusa2",
+      "year": 2014,
+      "country": "Japão",
+      "destination": "Asteróide Ryugu"
+    },
+    {
+      "id": 9,
+      "name": "Voyager 1",
+      "year": 1977,
+      "country": "Estados Unidos",
+      "destination": "Espaço interestelar"
+    },
+    {
+      "id": 10,
+      "name": "Hubble Space Telescope",
+      "year": 1990,
+      "country": "Estados Unidos",
+      "destination": "Órbita terrestre"
+    },
+    {
+      "id": 11,
+      "name": "Mars Curiosity Rover",
+      "year": 2011,
+      "country": "Estados Unidos",
+      "destination": "Marte"
+    },
+    {
+      "id": 12,
+      "name": "New Horizons",
+      "year": 2006,
+      "country": "Estados Unidos",
+      "destination": "Plutão e Cinturão de Kuiper"
+    },
+    {
+      "id": 13,
+      "name": "ISS (International Space Station)",
+      "year": 1998,
+      "country": "Vários países",
+      "destination": "Órbita terrestre"
+    },
+    {
+      "id": 14,
+      "name": "Venera 7",
+      "year": 1970,
+      "country": "União Soviética",
+      "destination": "Vênus"
+    },
+    {
+      "id": 15,
+      "name": "Cassini-Huygens",
+      "year": 1997,
+      "country": "NASA/ESA/ASI",
+      "destination": "Saturno"
+    },
+    {
+      "id": 16,
+      "name": "SpaceX Crew Dragon Demo-2",
+      "year": 2020,
+      "country": "Estados Unidos",
+      "destination": "Estação Espacial Internacional"
+    },
+    {
+      "id": 17,
+      "name": "Mars Express",
+      "year": 2003,
+      "country": "Agência Espacial Europeia",
+      "destination": "Marte"
+    },
+    {
+      "id": 18,
+      "name": "Apollo 8",
+      "year": 1968,
+      "country": "Estados Unidos",
+      "destination": "Órbita lunar"
+    },
+    {
+      "id": 19,
+      "name": "Chandrayaan-2",
+      "year": 2019,
+      "country": "Índia",
+      "destination": "Lua"
+    },
+    {
+      "id": 20,
+      "name": "Pioneer 11",
+      "year": 1973,
+      "country": "Estados Unidos",
+      "destination": "Júpiter e Saturno"
+    }
+  ]
+  
